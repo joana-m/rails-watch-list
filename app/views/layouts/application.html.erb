@@ -11,6 +11,10 @@
   </head>
 
   <body>
+    <div>
+      <%= link_to 'Create a list', new_list_path  %>
+      <%= link_to 'See my lists', lists_path %>
+    </div>
     <%= yield %>
   </body>
 </html>
