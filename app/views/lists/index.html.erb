@@ -1,11 +1,15 @@
-<h1> All lists </h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80);">
+  <div class="container">
+    <h1>All <strong>lists</strong> </h1>
+    <a class="btn btn-flat" href="#"><%= link_to 'Lists', lists_path %></a>
+  </div>
+</div>
 
-<div>
-<ul>
- <% @lists.each do |list| %>
- <li>
-<%= link_to list.name, list_path(list)  %>
- </li>
- <% end %>
-</ul>
+
+<div class="cards">
+  <% @lists.each do |list| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80)">
+        <%= link_to list.name, list_path(list)  %>
+      </div>
+    <% end %>
 </div>
