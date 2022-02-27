@@ -1,0 +1,29 @@
+.btn-custom-green {
+  color: white;
+  background-color: #00CC66;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #3fd188;
+    color: white;
+  }
+}
+
+.btn-custom-red {
+  color: white;
+  background-color: #F24236;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #ec5c52;
+    color: white;
+  }
+}
